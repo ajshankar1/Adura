@@ -41,34 +41,74 @@
       </div>
     </div>
     <div class="hero-swatches">
-      <svg class="hero-art" viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a paint roller applying colour to a wall beside paint swatch samples">
-  <rect x="0" y="0" width="480" height="420" rx="18" fill="var(--canvas-alt)"/>
-  <g opacity="0.5" stroke="var(--line)" stroke-width="1">
-    <line x1="0" y1="90" x2="480" y2="90"/><line x1="0" y1="170" x2="480" y2="170"/>
-    <line x1="0" y1="250" x2="480" y2="250"/><line x1="0" y1="330" x2="480" y2="330"/>
+      <svg class="hero-art" viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a paint roller applying blue paint to a wall, with paint swatch chips beside it">
+  <defs>
+    <linearGradient id="wallPaint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A7FBE"/>
+      <stop offset="55%" stop-color="#2E6DA8"/>
+      <stop offset="100%" stop-color="#1F4E7A"/>
+    </linearGradient>
+    <linearGradient id="rollerTube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBDE8B"/>
+      <stop offset="45%" stop-color="#F4B93E"/>
+      <stop offset="100%" stop-color="#D89A25"/>
+    </linearGradient>
+    <linearGradient id="handleWood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A9773F"/>
+      <stop offset="100%" stop-color="#7A5228"/>
+    </linearGradient>
+    <filter id="heroSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1E2A38" flood-opacity="0.18"/>
+    </filter>
+    <filter id="heroSoftSm" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1E2A38" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="560" height="480" rx="20" fill="var(--canvas-alt)"/>
+
+  <g opacity="0.55" stroke="#E4E0D4" stroke-width="1">
+    <line x1="0" y1="120" x2="560" y2="120"/>
+    <line x1="0" y1="220" x2="560" y2="220"/>
+    <line x1="0" y1="320" x2="560" y2="320"/>
+    <line x1="0" y1="420" x2="560" y2="420"/>
   </g>
-  <path class="ha-stroke" d="M60,300 C90,220 120,150 175,110" fill="none" stroke="var(--blue)" stroke-width="46" stroke-linecap="round"/>
-  <g fill="var(--blue)">
-    <path class="ha-drip" d="M95,255 q10,18 0,26 q-10,-8 0,-26 Z"/>
-    <path class="ha-drip d2" d="M130,195 q9,16 0,24 q-9,-8 0,-24 Z"/>
-    <path class="ha-drip d3" d="M160,140 q8,14 0,20 q-8,-6 0,-20 Z"/>
+
+  <g class="wall-painted">
+    <path d="M0,0 L390,0
+             C 360,70 420,120 380,170
+             C 340,220 400,260 360,320
+             C 330,370 380,410 340,480
+             L0,480 Z" fill="url(#wallPaint)"/>
+    <g opacity="0.12" stroke="#0C2A44" stroke-width="6" stroke-linecap="round">
+      <path d="M40,40 L340,20" fill="none"/>
+      <path d="M30,140 L360,120" fill="none"/>
+      <path d="M20,260 L350,250" fill="none"/>
+      <path d="M20,380 L330,390" fill="none"/>
+    </g>
   </g>
-  <g class="ha-roller-arm">
-    <rect x="168" y="96" width="66" height="30" rx="10" fill="var(--ink)"/>
-    <rect x="176" y="101" width="50" height="20" rx="7" fill="var(--gold)"/>
-    <rect x="228" y="106" width="140" height="10" rx="5" fill="#8A6D3B"/>
-    <rect x="358" y="98" width="14" height="26" rx="4" fill="var(--ink)"/>
+
+  <g fill="#1F4E7A">
+    <path class="ha-drip" d="M382,168 q11,20 0,30 q-11,-10 0,-30 Z"/>
+    <path class="ha-drip d2" d="M358,318 q10,18 0,27 q-10,-9 0,-27 Z"/>
+    <path class="ha-drip d3" d="M340,478 q9,16 0,24 q-9,-8 0,-24 Z" opacity="0.9"/>
   </g>
-  <g>
-    <rect class="ha-float f1" x="300" y="60" width="34" height="120" rx="8" fill="var(--orange)"/>
-    <rect class="ha-float f2" x="344" y="90" width="34" height="150" rx="8" fill="var(--green)"/>
-    <rect class="ha-float f3" x="388" y="70" width="34" height="130" rx="8" fill="var(--gold)"/>
-    <rect class="ha-float f4" x="432" y="100" width="30" height="110" rx="8" fill="var(--blue)"/>
+
+  <g class="ha-roller-arm" filter="url(#heroSoft)">
+    <path d="M300,150 C 340,145 400,150 452,160" fill="none" stroke="#5C6672" stroke-width="4" stroke-linecap="round"/>
+    <rect x="446" y="148" width="70" height="24" rx="12" fill="url(#handleWood)"/>
+    <path d="M296,152 L340,158" stroke="#3A3D42" stroke-width="6" stroke-linecap="round"/>
+    <rect x="210" y="126" width="96" height="52" rx="26" fill="url(#rollerTube)" stroke="#C98A1E" stroke-width="1.5"/>
+    <ellipse cx="218" cy="152" rx="9" ry="24" fill="#00000022"/>
+    <ellipse cx="298" cy="152" rx="9" ry="24" fill="#ffffff33"/>
   </g>
-  <circle class="ha-float f2" cx="70" cy="120" r="7" fill="var(--orange)"/>
-  <circle class="ha-float f4" cx="250" cy="60" r="5" fill="var(--gold)"/>
-  <circle class="ha-float f1" cx="230" cy="330" r="9" fill="var(--green)"/>
-  <circle class="ha-float f3" cx="120" cy="360" r="6" fill="var(--blue)"/>
+
+  <g filter="url(#heroSoftSm)">
+    <rect class="ha-float f1" x="392" y="352" width="46" height="70" rx="6" fill="var(--orange)" transform="rotate(-6 415 387)"/>
+    <rect class="ha-float f2" x="432" y="368" width="46" height="70" rx="6" fill="var(--green)" transform="rotate(3 455 403)"/>
+    <rect class="ha-float f3" x="472" y="356" width="46" height="70" rx="6" fill="var(--gold)" transform="rotate(-2 495 391)"/>
+    <rect class="ha-float f4" x="508" y="374" width="40" height="62" rx="6" fill="var(--blue)" transform="rotate(7 528 405)"/>
+  </g>
 </svg>
     </div>
   </div>
