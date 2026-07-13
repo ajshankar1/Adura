@@ -8,252 +8,329 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style-dark.css">
 </head>
 <body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-items">
+      <a href="tel:+919500708347">📞 +91 95007 08347</a>
+      <a href="mailto:adurapaintemporium@gmail.com">✉ adurapaintemporium@gmail.com</a>
+      <span>📍 Perumal Puram, Tirunelveli</span>
+    </div>
+    <div class="topbar-socials">
+      <a href="#">FB</a><a href="#">IG</a><a href="#">WA</a>
+    </div>
+  </div>
+</div>
+
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="brand">
+    <a href="#top" class="brand">
       <span class="brand-mark" aria-hidden="true"><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span></span>
       <span class="brand-text">Adura <em>Paint Emporium</em></span>
     </a>
     <nav class="nav-links" id="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="brands.html">Brands</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="nav-cta">Get a Quote</a>
+      <a href="#top" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#contact" class="nav-cta">Book Appointment</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">Tirunelveli's exclusive Birla&nbsp;Opus showroom</p>
-      <h1>Every wall<br>has a colour<br><span class="ital">waiting</span> on it.</h1>
-      <p class="hero-sub">23 years finding it. 2,300+ shades to choose from, genuine branded paint, and a team that visits your wall before it visits your wallet.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary">Book a free colour visit</a>
-        <a href="tel:+919500708347" class="btn btn-ghost">Call +91 95007 08347</a>
-      </div>
-    </div>
-    <div class="hero-swatches">
-      <svg class="hero-art" viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a paint roller applying blue paint to a wall, with paint swatch chips beside it">
-  <defs>
-    <linearGradient id="wallPaint" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#3A7FBE"/>
-      <stop offset="55%" stop-color="#2E6DA8"/>
-      <stop offset="100%" stop-color="#1F4E7A"/>
-    </linearGradient>
-    <linearGradient id="rollerTube" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FBDE8B"/>
-      <stop offset="45%" stop-color="#F4B93E"/>
-      <stop offset="100%" stop-color="#D89A25"/>
-    </linearGradient>
-    <linearGradient id="handleWood" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#A9773F"/>
-      <stop offset="100%" stop-color="#7A5228"/>
-    </linearGradient>
-    <filter id="heroSoft" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1E2A38" flood-opacity="0.18"/>
-    </filter>
-    <filter id="heroSoftSm" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1E2A38" flood-opacity="0.22"/>
-    </filter>
-  </defs>
-
-  <rect x="0" y="0" width="560" height="480" rx="20" fill="var(--canvas-alt)"/>
-
-  <g opacity="0.55" stroke="#E4E0D4" stroke-width="1">
-    <line x1="0" y1="120" x2="560" y2="120"/>
-    <line x1="0" y1="220" x2="560" y2="220"/>
-    <line x1="0" y1="320" x2="560" y2="320"/>
-    <line x1="0" y1="420" x2="560" y2="420"/>
-  </g>
-
-  <g class="wall-painted">
-    <path d="M0,0 L390,0
-             C 360,70 420,120 380,170
-             C 340,220 400,260 360,320
-             C 330,370 380,410 340,480
-             L0,480 Z" fill="url(#wallPaint)"/>
-    <g opacity="0.12" stroke="#0C2A44" stroke-width="6" stroke-linecap="round">
-      <path d="M40,40 L340,20" fill="none"/>
-      <path d="M30,140 L360,120" fill="none"/>
-      <path d="M20,260 L350,250" fill="none"/>
-      <path d="M20,380 L330,390" fill="none"/>
-    </g>
-  </g>
-
-  <g fill="#1F4E7A">
-    <path class="ha-drip" d="M382,168 q11,20 0,30 q-11,-10 0,-30 Z"/>
-    <path class="ha-drip d2" d="M358,318 q10,18 0,27 q-10,-9 0,-27 Z"/>
-    <path class="ha-drip d3" d="M340,478 q9,16 0,24 q-9,-8 0,-24 Z" opacity="0.9"/>
-  </g>
-
-  <g class="ha-roller-arm" filter="url(#heroSoft)">
-    <path d="M300,150 C 340,145 400,150 452,160" fill="none" stroke="#5C6672" stroke-width="4" stroke-linecap="round"/>
-    <rect x="446" y="148" width="70" height="24" rx="12" fill="url(#handleWood)"/>
-    <path d="M296,152 L340,158" stroke="#3A3D42" stroke-width="6" stroke-linecap="round"/>
-    <rect x="210" y="126" width="96" height="52" rx="26" fill="url(#rollerTube)" stroke="#C98A1E" stroke-width="1.5"/>
-    <ellipse cx="218" cy="152" rx="9" ry="24" fill="#00000022"/>
-    <ellipse cx="298" cy="152" rx="9" ry="24" fill="#ffffff33"/>
-  </g>
-
-  <g filter="url(#heroSoftSm)">
-    <rect class="ha-float f1" x="392" y="352" width="46" height="70" rx="6" fill="var(--orange)" transform="rotate(-6 415 387)"/>
-    <rect class="ha-float f2" x="432" y="368" width="46" height="70" rx="6" fill="var(--green)" transform="rotate(3 455 403)"/>
-    <rect class="ha-float f3" x="472" y="356" width="46" height="70" rx="6" fill="var(--gold)" transform="rotate(-2 495 391)"/>
-    <rect class="ha-float f4" x="508" y="374" width="40" height="62" rx="6" fill="var(--blue)" transform="rotate(7 528 405)"/>
-  </g>
-</svg>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow center">welcome to adura paint emporium</p>
+    <h1>Quality Paints &amp; Wall<br>Finishes <em>for Every Home</em></h1>
+    <p>Tirunelveli's exclusive Birla Opus showroom — 23+ years of expertise, 2,300+ shades, and genuine branded paint for homes and businesses.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Book a Free Colour Visit</a>
+      <a href="tel:+919500708347" class="btn btn-ghost">Call +91 95007 08347</a>
     </div>
   </div>
 </section>
 
-<section class="section" style="padding-top:0; padding-bottom:56px;">
-  <div class="wrap">
-    <div class="splash-row" style="justify-content:center;">
-      <div class="splash-badge">
-        <svg class="splash-shape" viewBox="0 0 200 160" style="fill:var(--green)"><path d="M 155.7,80.0 C 160.0,89.5 172.8,106.2 167.6,115.4 C 162.5,124.6 139.2,134.0 124.8,135.0 C 110.4,136.0 94.9,125.6 81.3,121.4 C 67.8,117.1 51.7,116.4 43.5,109.5 C 35.3,102.7 32.8,90.3 32.0,80.0 C 31.2,69.7 31.4,57.1 38.6,47.9 C 45.7,38.6 61.8,25.1 74.9,24.3 C 87.9,23.5 105.6,37.3 116.7,43.0 C 127.8,48.6 135.2,52.0 141.7,58.2 C 148.2,64.4 151.3,70.5 155.7,80.0 Z"/></svg>
-        <div class="splash-content"><strong class="count" data-target="23" data-suffix="+" data-decimals="0">0+</strong><span>Years in Tirunelveli</span></div>
-      </div>
-      <div class="splash-badge">
-        <svg class="splash-shape" viewBox="0 0 200 160" style="fill:var(--orange)"><path d="M 187.9,80.0 C 189.7,91.4 182.8,111.0 170.8,117.1 C 158.9,123.1 130.8,116.1 116.3,116.0 C 101.7,116.0 97.3,116.9 83.4,116.8 C 69.5,116.7 43.2,121.3 32.7,115.2 C 22.3,109.1 19.9,91.3 20.7,80.0 C 21.6,68.7 28.0,54.7 38.0,47.6 C 48.0,40.4 66.5,40.3 80.7,37.2 C 94.8,34.2 109.7,27.3 122.9,29.2 C 136.1,31.1 149.2,40.1 160.0,48.6 C 170.8,57.1 186.1,68.6 187.9,80.0 Z"/></svg>
-        <div class="splash-content"><strong class="count" data-target="2.3" data-suffix="K+" data-decimals="1">0K+</strong><span>Shades in Stock</span></div>
-      </div>
-      <div class="splash-badge">
-        <svg class="splash-shape" viewBox="0 0 200 160" style="fill:var(--gold)"><path d="M 159.7,80.0 C 161.4,89.3 164.6,103.0 158.0,110.4 C 151.4,117.8 133.5,121.0 120.1,124.4 C 106.6,127.8 90.6,132.8 77.1,130.7 C 63.7,128.6 44.4,120.2 39.4,111.7 C 34.4,103.3 43.8,88.9 47.0,80.0 C 50.3,71.1 54.3,68.0 58.8,58.5 C 63.3,49.0 64.3,26.3 74.3,23.0 C 84.3,19.7 106.4,33.2 118.7,38.5 C 131.0,43.8 141.4,47.9 148.2,54.8 C 155.0,61.7 158.1,70.7 159.7,80.0 Z"/></svg>
-        <div class="splash-content"><strong class="count" data-target="500" data-suffix="+" data-decimals="0">0+</strong><span>Projects Done</span></div>
-      </div>
-      <div class="splash-badge">
-        <svg class="splash-shape" viewBox="0 0 200 160" style="fill:var(--blue)"><path d="M 159.7,80.0 C 159.0,88.0 150.6,95.5 144.0,103.0 C 137.5,110.6 130.6,122.5 120.4,125.1 C 110.1,127.7 93.1,122.5 82.5,118.7 C 72.0,114.9 65.2,108.9 57.1,102.4 C 49.0,96.0 38.4,89.8 33.9,80.0 C 29.4,70.2 23.3,52.8 30.1,43.4 C 36.9,34.1 58.9,27.1 74.7,24.0 C 90.5,20.9 112.7,19.8 124.8,24.9 C 137.0,30.1 142.0,45.8 147.8,55.0 C 153.6,64.2 160.3,72.0 159.7,80.0 Z"/></svg>
-        <div class="splash-content"><strong class="count" data-target="100" data-suffix="%" data-decimals="0">0%</strong><span>Guarantee Rate</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="trust-strip">
-  <div class="wrap trust-inner">
-    <span>Authorised Birla Opus Dealer</span><span class="dot-sep">•</span>
-    <span>23+ Years, Same Family</span><span class="dot-sep">•</span>
-    <span>Free On-Site Colour Consultation</span><span class="dot-sep">•</span>
-    <span>Perumal Puram, Tirunelveli</span>
-  </div>
-</section>
-
-<section class="section about" id="about">
+<!-- ABOUT -->
+<section class="section" id="about">
   <div class="wrap about-grid">
     <div class="about-media">
+      <div class="glow"></div>
       <div class="about-photo"></div>
-      <div class="about-tag"><span class="tag-num">1997</span><span>Adura began as a construction company, long before it mixed its first litre of paint.</span></div>
+      <div class="about-badge"><strong>23+</strong><span>Years Experience</span></div>
     </div>
     <div class="about-copy">
-      <p class="eyebrow">Who we are</p>
-      <h2>We built the walls before we ever painted them.</h2>
-      <p>Adura Paint Emporium grew out of Adura Foundation — the same family that has been raising homes, apartments, and layouts across Tirunelveli for over two decades. We know how South Tamil Nadu heat, humidity, and monsoon spray actually treat a wall, because we've built hundreds of them.</p>
+      <p class="eyebrow">about company</p>
+      <h2>We're Providing Quality Paint &amp; Wall Solutions</h2>
+      <p>Adura Paint Emporium grew out of Adura Foundation — the same family that has been raising homes, apartments, and layouts across Tirunelveli for over two decades. We know how South Tamil Nadu heat, humidity, and monsoon spray actually treat a wall.</p>
       <ul class="about-points">
-        <li><strong>Genuine, branded stock</strong> — every tin sourced through authorised Birla Opus channels.</li>
-        <li><strong>Local-climate advice</strong> — recommendations built for Tirunelveli's weather.</li>
-        <li><strong>Transparent pricing</strong> — no hidden costs, explained before you commit.</li>
+        <li>Genuine, branded stock through authorised Birla Opus channels</li>
+        <li>Local-climate advice built for Tirunelveli's weather</li>
+        <li>Transparent pricing, explained before you commit</li>
       </ul>
-      <a href="about.html" class="link-arrow">Read our full story →</a>
+      <div class="about-foot">
+        <a href="#services" class="btn btn-primary">Read More About</a>
+        <div class="about-call">
+          <div class="ic">📞</div>
+          <div><span>Call anytime</span><strong>+91 95007 08347</strong></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section services alt" id="services">
+<!-- FEATURES -->
+<section class="section panel">
   <div class="wrap">
-    <p class="eyebrow center">What we stock</p>
-    <h2 class="center">From primer to final coat</h2>
-    <div class="service-grid">
-      <div class="service-card"><div class="service-swatch" style="background:var(--gold)"></div><h3>Interior Paints</h3><p>Smooth, low-odour finishes across 2,300+ shades.</p><a href="products.html" class="link-arrow">View range →</a></div>
-      <div class="service-card"><div class="service-swatch" style="background:var(--blue)"></div><h3>Exterior Paints</h3><p>UV and rain-resistant coatings for Tirunelveli's climate.</p><a href="products.html" class="link-arrow">View range →</a></div>
-      <div class="service-card"><div class="service-swatch" style="background:var(--orange)"></div><h3>Enamel &amp; Wood</h3><p>Glossy, durable protection for doors, grills and furniture.</p><a href="products.html" class="link-arrow">View range →</a></div>
-      <div class="service-card"><div class="service-swatch" style="background:var(--green)"></div><h3>Waterproofing</h3><p>Terrace and wall solutions against seepage and leakage.</p><a href="products.html" class="link-arrow">View range →</a></div>
-      <div class="service-card"><div class="service-swatch" style="background:#8A6D3B"></div><h3>Wallpaper</h3><p>Textured and printed wallpaper for feature walls.</p><a href="products.html" class="link-arrow">View range →</a></div>
-      <div class="service-card"><div class="service-swatch" style="background:#9C9C94"></div><h3>Cement</h3><p>Trusted construction-grade cement, under the same roof.</p><a href="products.html" class="link-arrow">View range →</a></div>
+    <div class="feature-row">
+      <div class="feature-card">
+        <div class="feature-ic" style="background:var(--green)">✓</div>
+        <h3>Genuine Products</h3>
+        <p>Every tin sourced through authorised Birla Opus channels — no substitutes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ic" style="background:var(--orange)">◐</div>
+        <h3>Free Consultation</h3>
+        <p>On-site colour and surface guidance before you spend a rupee.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ic" style="background:var(--gold)">★</div>
+        <h3>Skilled Team</h3>
+        <p>23+ years of construction and paint expertise, same family throughout.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ic" style="background:var(--blue)">₹</div>
+        <h3>Honest Pricing</h3>
+        <p>Transparent costs explained upfront — no surprises at the counter.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section brands" id="brands">
+<!-- SERVICES -->
+<section class="section" id="services">
   <div class="wrap">
-    <p class="eyebrow center">Birla Opus ranges we carry</p>
-    <h2 class="center">Three tiers, one standard of quality</h2>
-    <div class="brand-row">
-      <div class="brand-card"><span class="brand-tier">Luxury</span><h3>One</h3><p>Scuff-proof, stain-resistant, crack-protected — for refined interiors.</p></div>
-      <div class="brand-card featured"><span class="brand-tier">Premium</span><h3>Calista</h3><p>Long-lasting stain resistance with excellent washability.</p></div>
-      <div class="brand-card"><span class="brand-tier">Value</span><h3>Style</h3><p>Reliable coverage and finish, priced for everyday budgets.</p></div>
+    <p class="eyebrow center">our services</p>
+    <h2 class="center">Paint Solutions We're Offering</h2>
+    <div class="service-row">
+      <div class="service-tile">
+        <div class="service-tile-bg" style="background:linear-gradient(150deg,var(--gold),var(--bg))"></div>
+        <div class="service-tile-overlay"></div>
+        <div class="service-tile-content">
+          <h3>Interior Paints</h3>
+          <p>2,300+ shades, smooth low-odour finishes for every room.</p>
+          <a href="#contact">Read More →</a>
+        </div>
+      </div>
+      <div class="service-tile">
+        <div class="service-tile-bg" style="background:linear-gradient(150deg,var(--blue),var(--bg))"></div>
+        <div class="service-tile-overlay"></div>
+        <div class="service-tile-content">
+          <h3>Exterior Paints</h3>
+          <p>UV and rain-resistant coatings for Tirunelveli's climate.</p>
+          <a href="#contact">Read More →</a>
+        </div>
+      </div>
+      <div class="service-tile">
+        <div class="service-tile-bg" style="background:linear-gradient(150deg,var(--green),var(--bg))"></div>
+        <div class="service-tile-overlay"></div>
+        <div class="service-tile-content">
+          <h3>Waterproofing</h3>
+          <p>Terrace and wall solutions against seepage and leakage.</p>
+          <a href="#contact">Read More →</a>
+        </div>
+      </div>
     </div>
-    <p class="center" style="margin-top:32px;"><a href="brands.html" class="link-arrow">See all brand ranges →</a></p>
   </div>
 </section>
 
-<section class="section process dark" id="process">
-  <div class="wrap">
-    <p class="eyebrow center light">How a project runs</p>
-    <h2 class="center light">Consultation to final coat</h2>
-    <div class="process-row">
-      <div class="process-step"><span class="p-index">Consultation</span><p>You tell us the space, the problem, or just the mood you want.</p></div>
-      <div class="process-step"><span class="p-index">Inspection</span><p>Our team visits with diagnostic tools to read the wall's real condition.</p></div>
-      <div class="process-step"><span class="p-index">Wall Health Report</span><p>A clear, written recommendation — no guesswork, no upselling.</p></div>
-      <div class="process-step"><span class="p-index">Finish</span><p>Application guidance and support through to the final, lasting coat.</p></div>
+<!-- QUALITY / SKILLS -->
+<section class="section panel">
+  <div class="wrap quality-grid">
+    <div class="quality-media">
+      <div class="glow"></div>
+      <div style="position:absolute; inset:0; background:linear-gradient(150deg,var(--bg-panel2),var(--bg))"></div>
+      <div class="play-btn">▶</div>
+    </div>
+    <div>
+      <p class="eyebrow">why choose us</p>
+      <h2>Quality Work That Meets Your Expectations</h2>
+      <p style="color:var(--text-soft); margin:16px 0 30px;">From shade-matching to final coat, every project gets the same standard — the one we'd want on our own walls.</p>
+      <div class="skill-row">
+        <div class="skill">
+          <div class="skill-label"><span>Shade Match Accuracy</span><span class="pct">98%</span></div>
+          <div class="skill-bar"><div class="skill-fill blue" data-pct="98"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>Customer Satisfaction</span><span class="pct">95%</span></div>
+          <div class="skill-bar"><div class="skill-fill orange" data-pct="95"></div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section reviews" id="reviews">
+<!-- PROJECTS -->
+<section class="section" id="projects">
   <div class="wrap">
-    <p class="eyebrow center">From customers in Tirunelveli</p>
-    <h2 class="center">What people say after the paint dries</h2>
-    <div class="review-grid">
-      <div class="review-card"><p>"Ended up choosing a completely different exterior shade after their team pointed out how the west-facing wall fades faster. Two years on, the colour still looks fresh."</p><span class="review-name">— Property owner, Melapalayam</span></div>
-      <div class="review-card"><p>"Genuinely straightforward pricing. They talked me out of the more expensive range for my rental property and it was the right call."</p><span class="review-name">— Landlord, Palayamkottai</span></div>
-      <div class="review-card"><p>"Waterproofing on our terrace finally held through a full monsoon. Wish we'd called them the first time."</p><span class="review-name">— Homeowner, Tirunelveli Junction</span></div>
+    <p class="eyebrow center">recent work</p>
+    <h2 class="center">Keep an Eye on Our Latest Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-bg" style="background:linear-gradient(140deg,var(--blue),var(--bg))"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content"><span class="project-tag">Exterior</span><h3>Melapalayam Residence</h3></div>
+      </div>
+      <div class="project-card">
+        <div class="project-bg" style="background:linear-gradient(140deg,var(--gold),var(--bg))"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content"><span class="project-tag">Interior</span><h3>Palayamkottai Apartment</h3></div>
+      </div>
+      <div class="project-card">
+        <div class="project-bg" style="background:linear-gradient(140deg,var(--green),var(--bg))"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content"><span class="project-tag">Waterproofing</span><h3>Junction Terrace</h3></div>
+      </div>
+      <div class="project-card">
+        <div class="project-bg" style="background:linear-gradient(140deg,var(--orange),var(--bg))"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content"><span class="project-tag">Commercial</span><h3>Showroom Repaint</h3></div>
+      </div>
     </div>
-    <p class="review-note">Sample reviews shown for design reference — swap in real customer quotes before publishing.</p>
   </div>
 </section>
 
-<section class="cta-band">
+<!-- TEAM -->
+<section class="section panel" id="team">
   <div class="wrap">
-    <h2>Ready to see it on your wall, not just a chart?</h2>
-    <div class="cta-actions">
-      <a href="contact.html" class="btn btn-primary">Book a free colour visit</a>
-      <a href="tel:+919500708347" class="btn btn-ghost on-dark">Call +91 95007 08347</a>
+    <p class="eyebrow center">team members</p>
+    <h2 class="center">Meet the Adura Team</h2>
+    <div class="team-row">
+      <div class="team-card"><div class="team-photo">JA<div class="team-social"><a href="#">FB</a><a href="#">IG</a></div></div><span>Founder &amp; CEO</span><h3>Jude Antony</h3></div>
+      <div class="team-card"><div class="team-photo">I<div class="team-social"><a href="#">FB</a><a href="#">IG</a></div></div><span>Manager</span><h3>Iniyan</h3></div>
+      <div class="team-card"><div class="team-photo">T<div class="team-social"><a href="#">FB</a><a href="#">IG</a></div></div><span>Marketing Head</span><h3>Thalavai</h3></div>
+      <div class="team-card"><div class="team-photo">S<div class="team-social"><a href="#">FB</a><a href="#">IG</a></div></div><span>Accountant</span><h3>Suresh</h3></div>
     </div>
   </div>
 </section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow center">testimonials</p>
+    <h2 class="center">What Our Customers Say</h2>
+    <div class="testi-row">
+      <div class="testi-card">
+        <p>"Ended up choosing a completely different exterior shade after their team pointed out how the west-facing wall fades faster. Two years on, it still looks fresh."</p>
+        <div class="testi-who"><div class="testi-avatar"></div><div><strong>Property Owner</strong><span>Melapalayam</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p>"Genuinely straightforward pricing. They talked me out of the more expensive range for my rental property and it was the right call."</p>
+        <div class="testi-who"><div class="testi-avatar"></div><div><strong>Landlord</strong><span>Palayamkottai</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p>"Waterproofing on our terrace finally held through a full monsoon. Wish we'd called them the first time."</p>
+        <div class="testi-who"><div class="testi-avatar"></div><div><strong>Homeowner</strong><span>Tirunelveli Junction</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND STRIP -->
+<div class="wrap">
+  <div class="brand-strip">
+    <div class="brand-strip-inner">
+      <span class="brand-chip">Authorised Birla Opus Dealer</span>
+      <span class="brand-chip">One · Calista · Style</span>
+      <span class="brand-chip">Alldry Waterproofing</span>
+      <span class="brand-chip">Allwood Finishes</span>
+      <span class="brand-chip">23+ Years, Same Family</span>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow center">news &amp; updates</p>
+    <h2 class="center">Paint Tips &amp; Ideas</h2>
+    <div class="blog-row">
+      <div class="blog-card">
+        <div class="blog-media"></div>
+        <div class="blog-body">
+          <div class="blog-meta">29 Jun, 2026</div>
+          <h3>Best Waterproofing Solutions for Terrace &amp; Walls</h3>
+          <a href="#" class="link-arrow">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-media"></div>
+        <div class="blog-body">
+          <div class="blog-meta">18 Jun, 2026</div>
+          <h3>Trending Wall Colour Combinations for 2026</h3>
+          <a href="#" class="link-arrow">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-media"></div>
+        <div class="blog-body">
+          <div class="blog-meta">25 May, 2026</div>
+          <h3>Interior vs Exterior Paint: What's the Difference?</h3>
+          <a href="#" class="link-arrow">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="wrap" id="contact">
+  <div class="newsletter">
+    <div>
+      <h3>Ready to see it on your wall?</h3>
+      <p>Book a free colour consultation — in-store or on-site.</p>
+    </div>
+    <div class="newsletter-form">
+      <input type="tel" placeholder="Your phone number">
+      <button class="btn btn-primary">Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap footer-inner">
     <div>
-      <span class="brand-text light">Adura <em>Paint Emporium</em></span>
+      <span class="brand-text">Adura <em>Paint Emporium</em></span>
       <p>Tirunelveli's exclusive Birla Opus paint showroom, backed by 23+ years of Adura Foundation's construction expertise.</p>
-      <div class="contact-socials" style="margin-top:18px;">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="WhatsApp">WA</a>
-      </div>
+      <div class="footer-socials"><a href="#">FB</a><a href="#">IG</a><a href="#">WA</a></div>
     </div>
-    <div class="footer-cols">
-      <div>
-        <h4>Explore</h4>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="brands.html">Brands</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h4>Store</h4>
-        <span>7th Cross Street, Perumal Puram, Tirunelveli – 627007</span>
-        <span>+91 95007 08347</span>
-        <span>Mon–Sat 9:30–8:00, Sun 10:00–2:00</span>
-      </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#">Interior Paints</a>
+      <a href="#">Exterior Paints</a>
+      <a href="#">Waterproofing</a>
+      <a href="#">Wallpaper</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <span>7th Cross Street, Perumal Puram, Tirunelveli – 627007</span>
+      <span>+91 95007 08347</span>
+      <span>Mon–Sat 9:30–8:00, Sun 10:00–2:00</span>
     </div>
   </div>
   <div class="wrap footer-bottom">
@@ -261,6 +338,7 @@
     <span>Built for review, not yet the live site.</span>
   </div>
 </footer>
-<script src="assets/script.js"></script>
+
+<script src="assets/script-dark.js"></script>
 </body>
 </html>
