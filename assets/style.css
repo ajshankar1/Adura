@@ -272,31 +272,33 @@ h2.light, .section.dark p{color:var(--canvas);}
 
 /* ---------- HERO ILLUSTRATION ---------- */
 .hero-art{width:100%; height:100%;}
-.ha-drip{animation:haDrip 3.4s ease-in-out infinite;}
-.ha-drip.d2{animation-delay:.6s;}
-.ha-drip.d3{animation-delay:1.2s;}
+.wall-painted{animation: haReveal 1.8s cubic-bezier(.22,.9,.3,1) forwards;}
+@keyframes haReveal{
+  from{ clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
+  to{ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+.ha-drip{animation:haDrip 3s ease-in-out infinite;}
+.ha-drip.d2{animation-delay:.7s;}
+.ha-drip.d3{animation-delay:1.4s;}
 @keyframes haDrip{
   0%,100%{transform:translateY(0); opacity:1;}
-  50%{transform:translateY(10px); opacity:0.85;}
+  60%{transform:translateY(14px); opacity:0.7;}
 }
-.ha-float{animation:haFloat 4.5s ease-in-out infinite;}
-.ha-float.f2{animation-delay:.8s;}
-.ha-float.f3{animation-delay:1.6s;}
-.ha-float.f4{animation-delay:2.2s;}
+.ha-float{animation:haFloat 5s ease-in-out infinite;}
+.ha-float.f2{animation-delay:.5s;}
+.ha-float.f3{animation-delay:1s;}
+.ha-float.f4{animation-delay:1.5s;}
 @keyframes haFloat{
-  0%,100%{transform:translateY(0) rotate(0deg);}
-  50%{transform:translateY(-12px) rotate(3deg);}
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-5px);}
 }
-.ha-stroke{stroke-dasharray:600; stroke-dashoffset:600; animation:haStroke 1.6s ease forwards .3s;}
-@keyframes haStroke{to{stroke-dashoffset:0;}}
-.ha-roller-arm{transform-origin:420px 120px; animation:haRoller 3.2s ease-in-out infinite;}
+.ha-roller-arm{transform-origin:260px 180px; animation:haRoller 3.6s ease-in-out infinite;}
 @keyframes haRoller{
-  0%,100%{transform:rotate(0deg);}
-  50%{transform:rotate(-4deg);}
+  0%,100%{transform:translateY(0) rotate(-2deg);}
+  50%{transform:translateY(-6px) rotate(-4deg);}
 }
 @media (prefers-reduced-motion: reduce){
-  .ha-drip,.ha-float,.ha-roller-arm{animation:none;}
-  .ha-stroke{stroke-dashoffset:0; animation:none;}
+  .ha-drip,.ha-float,.ha-roller-arm,.wall-painted{animation:none; clip-path:none;}
 }
 @media (max-width: 900px){
   .nav-links{position:fixed; top:78px; right:0; left:0; height:calc(100vh - 78px); background:var(--canvas); flex-direction:column; align-items:flex-start; padding:32px 28px; gap:22px; transform:translateX(100%); transition:transform .3s ease; z-index:60; box-shadow:-12px 0 30px rgba(0,0,0,0.08); overflow-y:auto;}
